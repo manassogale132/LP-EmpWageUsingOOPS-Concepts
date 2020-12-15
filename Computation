@@ -1,0 +1,67 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Computation extends Variables {
+	int sum=0;
+
+	@Override
+	public void empbuilder(String cname, int fwage, int hwage, int nwage, int wdays) {
+		
+	
+		System.out.println(" ");
+		System.out.println("-----------------------------------------------------------");
+		System.out.println("--Employee Wage Builder--");
+		System.out.println("-----------------------------------------------------------");
+		System.out.println(" ");
+		System.out.println("Company-Name is :"+cname);
+		System.out.println(" ");
+		System.out.println("Full-Wage is :"+fwage);
+		System.out.println(" ");
+		System.out.println("Half-Wage is :"+hwage);
+		System.out.println(" ");
+		System.out.println("No-Wage is :"+nwage);
+		System.out.println(" ");
+		System.out.println("Working-Days is :"+wdays);
+		System.out.println(" ");
+		System.out.println("-----------------------------------------------------------");
+		
+		System.out.println("Days"+"                  "+"Wage"+"                    "+"Total Sum");
+		System.out.println(" ");
+		
+		
+		for(int i=1;i<=wdays;i++) {
+		Random rand=new Random();
+		int attend=rand.nextInt(3);
+		
+		switch(attend) {
+		
+		case 0:
+		sum=sum+nwage;
+		System.out.println("Day "+i+"                  "+nwage+"                         "+sum);
+		break;
+	
+		case 1:
+			sum=sum+hwage;
+			System.out.println("Day "+i+"                  "+hwage+"                         "+sum);
+			break;
+			
+		case 2:
+			sum=sum+fwage;  
+			System.out.println("Day "+i+"                  "+fwage+"                         "+sum);
+			break;
+		
+		}
+		}
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println("-----------------------------------------------------------");
+		System.out.println("Total Employee wage for"+" "+cname+" "+"is :"+sum);
+		System.out.println(" ");
+		System.out.println(" ");
+		
+		System.out.println("=================================================================================================");
+	}
+
+	
+}
+
