@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main  {
+
+	public static void main(String[] args) {
+		
+		Computation company1=new Computation();
+        company1.empbuilder("Amazon", 300, 150, 0, 28);         //Object for first company which use same Logic class.
+        
+        Computation company2=new Computation();                 //Object for second company.
+        company2.empbuilder("Flipkart", 160, 80, 0, 25);
+        
+       
+	}
+
+}
