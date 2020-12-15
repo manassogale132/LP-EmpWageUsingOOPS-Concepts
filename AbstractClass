@@ -1,8 +1,0 @@
-
-abstract class Variables {
-	
-	public abstract void empBuilder(String cname,int fwage,int hwage,int nwage,int wdays);
-	public abstract void sumEmpWage();
-	
-}
-
