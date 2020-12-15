@@ -4,12 +4,14 @@ public class Main  {
 
 	public static void main(String[] args) {
 		
-		Computation company1=new Computation();
-        company1.empbuilder("Amazon", 300, 150, 0, 28);         //Object for first company which use same Logic class.
-        
+	Computation company1=new Computation();             //Object for first company which use same Logic class.   
+        company1.empBuilder("Amazon", 300, 150, 0, 28);         
+        company1.sumEmpWage();
+    
         Computation company2=new Computation();                 //Object for second company.
-        company2.empbuilder("Flipkart", 160, 80, 0, 25);
-        
+        company2.empBuilder("Flipkart", 160, 80, 0, 25);
+        company2.sumEmpWage();
+   
        
 	}
 
