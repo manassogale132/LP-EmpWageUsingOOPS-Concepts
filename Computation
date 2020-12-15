@@ -1,11 +1,11 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Computation extends Variables {
+public class Computation {
 	
 	int sum=0;
 
-	@Override
+	
 	public void empBuilder(String cname, int fwage, int hwage, int nwage, int wdays) {
 		
 	
@@ -57,7 +57,7 @@ public class Computation extends Variables {
 	}
 
 
-	@Override
+	
 	public void sumEmpWage() {
 		System.out.println(" ");
 		System.out.println(" ");
