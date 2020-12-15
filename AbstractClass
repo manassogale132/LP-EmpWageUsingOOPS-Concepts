@@ -1,0 +1,6 @@
+
+abstract class Variables {
+	
+	public abstract void empbuilder(String cname,int fwage,int hwage,int nwage,int wdays);
+	
+}
